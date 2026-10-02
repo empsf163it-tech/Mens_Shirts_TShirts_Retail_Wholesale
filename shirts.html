@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore contemporary men's shirts including casual, formal, Oxford, and linen shirts.">
+  <title>Shirts Collection | FORMEN</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <span class="brand-icon">F</span> FORMEN
+    </a>
+    <nav class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="shirts.html" class="active">Shirts</a>
+      <a href="tshirts.html">T-Shirts</a>
+      <a href="polos.html">Polos</a>
+      <a href="wholesale.html">Wholesale</a>
+      <a href="size-guide.html">Size Guide</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="utility-login" data-auth-toggle aria-label="Login">
+        <span>Login</span>
+      </button>
+      <button class="menu-toggle" aria-label="Open navigation">☰</button>
+    </div>
+  </div>
+  <div class="container mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="shirts.html" class="active">Shirts</a>
+    <a href="tshirts.html">T-Shirts</a>
+    <a href="polos.html">Polos</a>
+    <a href="wholesale.html">Wholesale</a>
+    <a href="size-guide.html">Size Guide</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="faq.html">FAQ</a>
+    <a href="#" data-auth-toggle>Login</a>
+  </div>
+</header>
+
+<!-- Auth Modal Popup -->
+<div class="auth-modal-overlay" id="authModal">
+  <div class="auth-modal">
+    <button class="auth-close" data-auth-close aria-label="Close Modal">&times;</button>
+    
+    <div class="auth-tabs">
+      <button class="auth-tab active" data-auth-tab="login">Sign In</button>
+      <button class="auth-tab" data-auth-tab="signup">Create Account</button>
+    </div>
+
+    <form class="auth-form active" id="loginForm" data-demo>
+      <div class="eyebrow" style="margin-bottom: 4px;">Welcome Back</div>
+      <h2>Sign In to FORMEN</h2>
+      <p class="muted" style="margin-bottom: 20px;">Access your orders, wholesale catalogues &amp; account settings.</p>
+      
+      <div class="field">
+        <label>Email Address *</label>
+        <input type="email" required placeholder="name@example.com">
+      </div>
+      <div class="field">
+        <label>Password *</label>
+        <input type="password" required placeholder="••••••••">
+      </div>
+      <div class="auth-options">
+        <label class="checkbox-label">
+          <input type="checkbox" checked> Remember me
+        </label>
+        <a href="#" class="forgot-link" data-action="Password reset link sent to your email.">Forgot Password?</a>
+      </div>
+      <button class="btn full-btn" type="submit">Sign In</button>
+    </form>
+
+    <form class="auth-form" id="signupForm" data-demo>
+      <div class="eyebrow" style="margin-bottom: 4px;">Join FORMEN</div>
+      <h2>Create an Account</h2>
+      <p class="muted" style="margin-bottom: 20px;">Register for exclusive collections, wholesale pricing &amp; fast checkout.</p>
+      
+      <div class="field">
+        <label>Full Name *</label>
+        <input type="text" required placeholder="John Doe">
+      </div>
+      <div class="field">
+        <label>Email Address *</label>
+        <input type="email" required placeholder="name@example.com">
+      </div>
+      <div class="field">
+        <label>Account Type</label>
+        <select>
+          <option>Retail Customer</option>
+          <option>Wholesale Buyer / Reseller</option>
+          <option>Private Label Partner</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Password *</label>
+        <input type="password" required placeholder="••••••••">
+      </div>
+      <button class="btn full-btn" type="submit">Create Account</button>
+    </form>
+  </div>
+</div>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="eyebrow">Shirt Collection</div>
+      <h1>MEN'S SHIRTS</h1>
+      <p>A comprehensive lineup of formal dress shirts, casual button-downs, structured Oxfords, breezy linen blends, and heavy utility overshirts.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="filters">
+        <button class="filter active" data-filter="all">All Shirts (12)</button>
+        <button class="filter" data-filter="slim">Slim Fit</button>
+        <button class="filter" data-filter="regular">Regular Fit</button>
+        <button class="filter" data-filter="relaxed">Relaxed Fit</button>
+        <button class="filter" data-filter="oversized">Oversized</button>
+      </div>
+
+      <div class="products">
+        <article class="product" data-category="regular">
+          <div class="product-img">
+            <span class="tag">BESTSELLER</span>
+            <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=900&q=85" alt="Oxford Regular Shirt">
+            <a class="quick" href="product.html">QUICK VIEW</a>
+          </div>
+          <div class="product-info">
+            <h3>Oxford Regular Shirt</h3>
+            <p>100% Oxford Cotton · Regular Fit</p>
+            <div class="price-row">
+              <span class="price">₹1,899</span>
+              <span class="code">SKU-SH001</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product" data-category="relaxed oversized">
+          <div class="product-img">
+            <span class="tag">NEW</span>
+            <img src="https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=900&q=85" alt="Everyday Overshirt">
+            <a class="quick" href="product.html">QUICK VIEW</a>
+          </div>
+          <div class="product-info">
+            <h3>Everyday Heavy Overshirt</h3>
+            <p>Cotton Twill · Relaxed Fit</p>
+            <div class="price-row">
+              <span class="price">₹2,199</span>
+              <span class="code">SKU-SH002</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product" data-category="slim">
+          <div class="product-img">
+            <span class="tag">FORMAL</span>
+            <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=900&q=85" alt="Clean Formal Poplin Shirt">
+            <a class="quick" href="product.html">QUICK VIEW</a>
+          </div>
+          <div class="product-info">
+            <h3>Clean Formal Poplin Shirt</h3>
+            <p>Fine Poplin Cotton · Slim Fit</p>
+            <div class="price-row">
+              <span class="price">₹1,999</span>
+              <span class="code">SKU-SH003</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product" data-category="relaxed">
+          <div class="product-img">
+            <span class="tag">SUMMER</span>
+            <img src="https://images.unsplash.com/photo-1621072156002-e2fccdc0b176?auto=format&fit=crop&w=900&q=85" alt="Pure Linen Summer Shirt">
+            <a class="quick" href="product.html">QUICK VIEW</a>
+          </div>
+          <div class="product-info">
+            <h3>Pure Linen Breeze Shirt</h3>
+            <p>100% French Linen · Relaxed Fit</p>
+            <div class="price-row">
+              <span class="price">₹2,499</span>
+              <span class="code">SKU-SH004</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product" data-category="regular">
+          <div class="product-img">
+            <span class="tag">UTILITY</span>
+            <img src="https://images.unsplash.com/photo-1627225924765-552d49cf47ad?auto=format&fit=crop&w=900&q=85" alt="Denim Work Shirt">
+            <a class="quick" href="product.html">QUICK VIEW</a>
+          </div>
+          <div class="product-info">
+            <h3>Heritage Denim Work Shirt</h3>
+            <p>11oz Cotton Denim · Regular Fit</p>
+            <div class="price-row">
+              <span class="price">₹2,299</span>
+              <span class="code">SKU-SH005</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product" data-category="slim">
+          <div class="product-img">
+            <span class="tag">ESSENTIAL</span>
+            <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=900&q=85" alt="Essential Slim Shirt">
+            <a class="quick" href="product.html">QUICK VIEW</a>
+          </div>
+          <div class="product-info">
+            <h3>Micro-Check Slim Shirt</h3>
+            <p>Combed Cotton · Slim Fit</p>
+            <div class="price-row">
+              <span class="price">₹1,799</span>
+              <span class="code">SKU-SH006</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product" data-category="regular">
+          <div class="product-img">
+            <span class="tag">NEW</span>
+            <img src="https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=900&q=85" alt="Mandarin Collar Shirt">
+            <a class="quick" href="product.html">QUICK VIEW</a>
+          </div>
+          <div class="product-info">
+            <h3>Mandarin Collar Linen Shirt</h3>
+            <p>Cotton Linen Blend · Regular Fit</p>
+            <div class="price-row">
+              <span class="price">₹2,099</span>
+              <span class="code">SKU-SH007</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product" data-category="oversized">
+          <div class="product-img">
+            <span class="tag">STREETWEAR</span>
+            <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=900&q=85" alt="Boxy Flannel Shirt">
+            <a class="quick" href="product.html">QUICK VIEW</a>
+          </div>
+          <div class="product-info">
+            <h3>Boxy Heavyweight Flannel</h3>
+            <p>Brushed Cotton Flannel · Oversized Fit</p>
+            <div class="price-row">
+              <span class="price">₹2,399</span>
+              <span class="code">SKU-SH008</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product" data-category="slim">
+          <div class="product-img">
+            <span class="tag">LUXURY</span>
+            <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=900&q=85" alt="Executive Satin Finish Shirt">
+            <a class="quick" href="product.html">QUICK VIEW</a>
+          </div>
+          <div class="product-info">
+            <h3>Executive Satin Finish Shirt</h3>
+            <p>Egyptian Cotton · Slim Fit</p>
+            <div class="price-row">
+              <span class="price">₹2,699</span>
+              <span class="code">SKU-SH009</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product" data-category="relaxed">
+          <div class="product-img">
+            <span class="tag">NEW</span>
+            <img src="https://images.unsplash.com/photo-1621072156002-e2fccdc0b176?auto=format&fit=crop&w=900&q=85" alt="Cuban Collar Resort Shirt">
+            <a class="quick" href="product.html">QUICK VIEW</a>
+          </div>
+          <div class="product-info">
+            <h3>Cuban Collar Resort Shirt</h3>
+            <p>Tencel Blend · Relaxed Fit</p>
+            <div class="price-row">
+              <span class="price">₹1,999</span>
+              <span class="code">SKU-SH010</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product" data-category="regular">
+          <div class="product-img">
+            <span class="tag">CLASSIC</span>
+            <img src="https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=900&q=85" alt="Chambray Everyday Shirt">
+            <a class="quick" href="product.html">QUICK VIEW</a>
+          </div>
+          <div class="product-info">
+            <h3>Chambray Everyday Shirt</h3>
+            <p>100% Cotton Chambray · Regular Fit</p>
+            <div class="price-row">
+              <span class="price">₹1,899</span>
+              <span class="code">SKU-SH011</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product" data-category="relaxed">
+          <div class="product-img">
+            <span class="tag">AUTUMN</span>
+            <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=900&q=85" alt="Fine Rib Corduroy Shirt">
+            <a class="quick" href="product.html">QUICK VIEW</a>
+          </div>
+          <div class="product-info">
+            <h3>Fine Rib Corduroy Shirt</h3>
+            <p>Pinwale Corduroy Cotton · Relaxed Fit</p>
+            <div class="price-row">
+              <span class="price">₹2,299</span>
+              <span class="code">SKU-SH012</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>FORMEN</h3>
+        <p>Contemporary men's shirts, T-shirts and polos for retail buyers and wholesale partners. Crafted with focus on fit, fabric and longevity.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram" data-action="Follow FORMEN on Instagram"><span>📷</span> Instagram</a>
+          <a href="#" aria-label="Facebook" data-action="Follow FORMEN on Facebook"><span>📘</span> Facebook</a>
+          <a href="#" aria-label="LinkedIn" data-action="Connect on LinkedIn"><span>💼</span> LinkedIn</a>
+          <a href="#" aria-label="Twitter" data-action="Follow FORMEN on X / Twitter"><span>🌐</span> Twitter/X</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>SHOP</h4>
+        <a href="shirts.html">Shirts Collection</a>
+        <a href="tshirts.html">T-Shirts Collection</a>
+        <a href="polos.html">Polo Shirts</a>
+        <a href="index.html#new">New Arrivals</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>BUSINESS &amp; SUPPORT</h4>
+        <a href="wholesale.html">Wholesale Catalogue</a>
+        <a href="size-guide.html">Size &amp; Fit Guide</a>
+        <a href="faq.html">Ordering &amp; Shipping FAQ</a>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>STAY CONNECTED</h4>
+        <p>Subscribe to receive new season drop alerts, fabric guides, and wholesale volume pricing.</p>
+        <form class="newsletter-form" data-demo>
+          <input type="email" required placeholder="Enter your business email...">
+          <button class="btn" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <span>© 2026 FORMEN Menswear. All rights reserved.</span>
+      <span>Retail · Wholesale · Private Label · Contemporary Apparel</span>
+    </div>
+  </div>
+</footer>
+<div class="flash"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
