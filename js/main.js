@@ -32,6 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault();
         const tab = btn.dataset.authTab || "login";
         openModal(tab);
+        const mobileNav = document.querySelector(".mobile-menu");
+        if (mobileNav) mobileNav.classList.remove("open");
       });
     });
   }

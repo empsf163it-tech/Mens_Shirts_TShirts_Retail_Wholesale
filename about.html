@@ -1,22 +1,43 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Learn about FORMEN menswear brand philosophy, fabric standards, craftsmanship, and showroom design.">
+  <meta name="description"
+    content="Learn about FORMEN menswear brand philosophy, fabric standards, craftsmanship, and showroom design.">
   <title>About Us | FORMEN</title>
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="alternate icon" href="images/favicon.svg">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="index.html">
-      <span class="brand-icon">F</span> FORMEN
-    </a>
-    <nav class="nav-menu">
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="brand-icon">F</span> FORMEN
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="shirts.html">Shirts</a>
+        <a href="tshirts.html">T-Shirts</a>
+        <a href="polos.html">Polos</a>
+        <a href="wholesale.html">Wholesale</a>
+        <a href="size-guide.html">Size Guide</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="utility-login" data-auth-toggle aria-label="Login">
+          <span>Login</span>
+        </button>
+        <button class="menu-toggle" aria-label="Open navigation">☰</button>
+      </div>
+    </div>
+    <div class="container mobile-menu">
       <a href="index.html">Home</a>
       <a href="shirts.html">Shirts</a>
       <a href="tshirts.html">T-Shirts</a>
@@ -26,248 +47,246 @@
       <a href="about.html" class="active">About</a>
       <a href="contact.html">Contact</a>
       <a href="faq.html">FAQ</a>
-    </nav>
-    <div class="nav-actions">
-      <button class="utility-login" data-auth-toggle aria-label="Login">
-        <span>Login</span>
-      </button>
-      <button class="menu-toggle" aria-label="Open navigation">☰</button>
+      <a href="#" class="mobile-login-btn" data-auth-toggle>Login</a>
+    </div>
+  </header>
+
+  <!-- Auth Modal Popup -->
+  <div class="auth-modal-overlay" id="authModal">
+    <div class="auth-modal">
+      <button class="auth-close" data-auth-close aria-label="Close Modal">&times;</button>
+
+      <div class="auth-tabs">
+        <button class="auth-tab active" data-auth-tab="login">Sign In</button>
+        <button class="auth-tab" data-auth-tab="signup">Create Account</button>
+      </div>
+
+      <form class="auth-form active" id="loginForm" data-demo>
+        <div class="eyebrow" style="margin-bottom: 4px;">Welcome Back</div>
+        <h2>Sign In to FORMEN</h2>
+        <p class="muted" style="margin-bottom: 20px;">Access your orders, wholesale catalogues &amp; account settings.
+        </p>
+
+        <div class="field">
+          <label>Email Address *</label>
+          <input type="email" required placeholder="name@example.com">
+        </div>
+        <div class="field">
+          <label>Password *</label>
+          <input type="password" required placeholder="••••••••">
+        </div>
+        <div class="auth-options">
+          <label class="checkbox-label">
+            <input type="checkbox" checked> Remember me
+          </label>
+          <a href="#" class="forgot-link" data-action="Password reset link sent to your email.">Forgot Password?</a>
+        </div>
+        <button class="btn full-btn" type="submit">Sign In</button>
+      </form>
+
+      <form class="auth-form" id="signupForm" data-demo>
+        <div class="eyebrow" style="margin-bottom: 4px;">Join FORMEN</div>
+        <h2>Create an Account</h2>
+        <p class="muted" style="margin-bottom: 20px;">Register for exclusive collections, wholesale pricing &amp; fast
+          checkout.</p>
+
+        <div class="field">
+          <label>Full Name *</label>
+          <input type="text" required placeholder="John Doe">
+        </div>
+        <div class="field">
+          <label>Email Address *</label>
+          <input type="email" required placeholder="name@example.com">
+        </div>
+        <div class="field">
+          <label>Account Type</label>
+          <select>
+            <option>Retail Customer</option>
+            <option>Wholesale Buyer / Reseller</option>
+            <option>Private Label Partner</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Password *</label>
+          <input type="password" required placeholder="••••••••">
+        </div>
+        <button class="btn full-btn" type="submit">Create Account</button>
+      </form>
     </div>
   </div>
-  <div class="container mobile-menu">
-    <a href="index.html">Home</a>
-    <a href="shirts.html">Shirts</a>
-    <a href="tshirts.html">T-Shirts</a>
-    <a href="polos.html">Polos</a>
-    <a href="wholesale.html">Wholesale</a>
-    <a href="size-guide.html">Size Guide</a>
-    <a href="about.html" class="active">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="faq.html">FAQ</a>
-    <a href="#" data-auth-toggle>Login</a>
-  </div>
-</header>
 
-<!-- Auth Modal Popup -->
-<div class="auth-modal-overlay" id="authModal">
-  <div class="auth-modal">
-    <button class="auth-close" data-auth-close aria-label="Close Modal">&times;</button>
-    
-    <div class="auth-tabs">
-      <button class="auth-tab active" data-auth-tab="login">Sign In</button>
-      <button class="auth-tab" data-auth-tab="signup">Create Account</button>
-    </div>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow">Our Story &amp; Philosophy</div>
+        <h1>CONTEMPORARY MENSWEAR, CLEARLY PRESENTED.</h1>
+        <p>A modern menswear label combining fine fabric sourcing, precision garment engineering, and a streamlined
+          retail &amp; wholesale experience.</p>
+      </div>
+    </section>
 
-    <form class="auth-form active" id="loginForm" data-demo>
-      <div class="eyebrow" style="margin-bottom: 4px;">Welcome Back</div>
-      <h2>Sign In to FORMEN</h2>
-      <p class="muted" style="margin-bottom: 20px;">Access your orders, wholesale catalogues &amp; account settings.</p>
-      
-      <div class="field">
-        <label>Email Address *</label>
-        <input type="email" required placeholder="name@example.com">
-      </div>
-      <div class="field">
-        <label>Password *</label>
-        <input type="password" required placeholder="••••••••">
-      </div>
-      <div class="auth-options">
-        <label class="checkbox-label">
-          <input type="checkbox" checked> Remember me
-        </label>
-        <a href="#" class="forgot-link" data-action="Password reset link sent to your email.">Forgot Password?</a>
-      </div>
-      <button class="btn full-btn" type="submit">Sign In</button>
-    </form>
-
-    <form class="auth-form" id="signupForm" data-demo>
-      <div class="eyebrow" style="margin-bottom: 4px;">Join FORMEN</div>
-      <h2>Create an Account</h2>
-      <p class="muted" style="margin-bottom: 20px;">Register for exclusive collections, wholesale pricing &amp; fast checkout.</p>
-      
-      <div class="field">
-        <label>Full Name *</label>
-        <input type="text" required placeholder="John Doe">
-      </div>
-      <div class="field">
-        <label>Email Address *</label>
-        <input type="email" required placeholder="name@example.com">
-      </div>
-      <div class="field">
-        <label>Account Type</label>
-        <select>
-          <option>Retail Customer</option>
-          <option>Wholesale Buyer / Reseller</option>
-          <option>Private Label Partner</option>
-        </select>
-      </div>
-      <div class="field">
-        <label>Password *</label>
-        <input type="password" required placeholder="••••••••">
-      </div>
-      <button class="btn full-btn" type="submit">Create Account</button>
-    </form>
-  </div>
-</div>
-
-<main>
-  <section class="page-hero">
-    <div class="container">
-      <div class="eyebrow">Our Story &amp; Philosophy</div>
-      <h1>CONTEMPORARY MENSWEAR, CLEARLY PRESENTED.</h1>
-      <p>A modern menswear label combining fine fabric sourcing, precision garment engineering, and a streamlined retail &amp; wholesale experience.</p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container about-grid">
-      <div>
-        <div class="eyebrow">The Founding Idea</div>
-        <h2 style="font-family: var(--display); font-size: 4.5rem; font-weight: 900; line-height: 0.85; margin: 12px 0;">PRODUCT FIRST. ALWAYS.</h2>
-      </div>
-      <div>
-        <p style="font-size: 1.15rem; color: var(--body-text); font-weight: 500;">FORMEN was created to strip away retail noise and focus entirely on what makes a great garment: superior raw materials, clean tailoring, durable stitching, and intuitive body sizing.</p>
-        <p style="font-size: 1.05rem; color: var(--muted);">Whether serving an individual customer looking for the perfect Oxford shirt or a retail buyer ordering 500 units for a department store chain, our interface and garments uphold the highest standard of clarity and consistency.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section bg-light">
-    <div class="container">
-      <div class="section-head">
+    <section class="section">
+      <div class="container about-grid">
         <div>
-          <div class="eyebrow">Quality Standards</div>
-          <h2>OUR MANUFACTURING PILLARS.</h2>
+          <div class="eyebrow">The Founding Idea</div>
+          <h2
+            style="font-family: var(--display); font-size: 4.5rem; font-weight: 900; line-height: 0.85; margin: 12px 0;">
+            PRODUCT FIRST. ALWAYS.</h2>
         </div>
-        <p>Four uncompromising standards applied to every garment produced in our factories.</p>
-      </div>
-
-      <div class="fabric-grid">
-        <div class="fabric">
-          <strong>1. LONG-STAPLE COTTON</strong>
-          <p>We source long-staple combed cotton and organic yarns to prevent pillage and ensure softness over years of wash cycles.</p>
-        </div>
-        <div class="fabric">
-          <strong>2. REINFORCED STITCHING</strong>
-          <p>Double-needle flat-fell seams, 18-stitches-per-inch collar construction, and fused interlinings for shape retention.</p>
-        </div>
-        <div class="fabric">
-          <strong>3. PRE-SHRUNK FABRICS</strong>
-          <p>All fabrics undergo bio-washing and Sanforization to guarantee zero shrinkage or torquing post-laundry.</p>
-        </div>
-        <div class="fabric">
-          <strong>4. ETHICAL PRODUCTION</strong>
-          <p>Fair-wage, WRAP-certified manufacturing facilities with zero-discharge wastewater filtration systems.</p>
-        </div>
-        <div class="fabric">
-          <strong>5. RECYCLABLE PACKAGING</strong>
-          <p>100% biodegradable polybags, unbleached kraft shipping boxes, and FSC-certified garment tags.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="fit">
-    <div class="container">
-      <div class="section-head">
         <div>
-          <div class="eyebrow">Fit System</div>
-          <h2>FIND YOUR SILHOUETTE FIT.</h2>
+          <p style="font-size: 1.15rem; color: var(--body-text); font-weight: 500;">FORMEN was created to strip away
+            retail noise and focus entirely on what makes a great garment: superior raw materials, clean tailoring,
+            durable stitching, and intuitive body sizing.</p>
+          <p style="font-size: 1.05rem; color: var(--muted);">Whether serving an individual customer looking for the
+            perfect Oxford shirt or a retail buyer ordering 500 units for a department store chain, our interface and
+            garments uphold the highest standard of clarity and consistency.</p>
         </div>
-        <p>Select a silhouette below to preview how our sizing system adapts around fit profiles.</p>
+      </div>
+    </section>
+
+    <section class="section bg-light">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Quality Standards</div>
+            <h2>OUR MANUFACTURING PILLARS.</h2>
+          </div>
+          <p>Four uncompromising standards applied to every garment produced in our factories.</p>
+        </div>
+
+        <div class="fabric-grid">
+          <div class="fabric">
+            <strong>1. LONG-STAPLE COTTON</strong>
+            <p>We source long-staple combed cotton and organic yarns to prevent pillage and ensure softness over years
+              of wash cycles.</p>
+          </div>
+          <div class="fabric">
+            <strong>2. REINFORCED STITCHING</strong>
+            <p>Double-needle flat-fell seams, 18-stitches-per-inch collar construction, and fused interlinings for shape
+              retention.</p>
+          </div>
+          <div class="fabric">
+            <strong>3. PRE-SHRUNK FABRICS</strong>
+            <p>All fabrics undergo bio-washing and Sanforization to guarantee zero shrinkage or torquing post-laundry.
+            </p>
+          </div>
+          <div class="fabric">
+            <strong>4. ETHICAL PRODUCTION</strong>
+            <p>Fair-wage, WRAP-certified manufacturing facilities with zero-discharge wastewater filtration systems.</p>
+          </div>
+          <div class="fabric">
+            <strong>5. RECYCLABLE PACKAGING</strong>
+            <p>100% biodegradable polybags, unbleached kraft shipping boxes, and FSC-certified garment tags.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="fit">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Fit System</div>
+            <h2>FIND YOUR SILHOUETTE FIT.</h2>
+          </div>
+          <p>Select a silhouette below to preview how our sizing system adapts around fit profiles.</p>
+        </div>
+
+        <div class="fit-grid">
+          <div class="fit" data-fit="Slim">
+            <div class="mono">01 / FIT</div>
+            <h3>SLIM</h3>
+            <p>Tapered through chest and body. Clean, tailored armholes and narrow sleeve openings.</p>
+          </div>
+          <div class="fit" data-fit="Regular">
+            <div class="mono">02 / FIT</div>
+            <h3>REGULAR</h3>
+            <p>Balanced everyday silhouette. Classic straight drop with traditional comfort allowance.</p>
+          </div>
+          <div class="fit" data-fit="Relaxed">
+            <div class="mono">03 / FIT</div>
+            <h3>RELAXED</h3>
+            <p>More breathing room across shoulders and torso. Soft natural drape for easy wear.</p>
+          </div>
+          <div class="fit" data-fit="Oversized">
+            <div class="mono">04 / FIT</div>
+            <h3>OVERSIZED</h3>
+            <p>Intentional boxy volume, dropped shoulders, and wide sleeves for streetwear styling.</p>
+          </div>
+        </div>
+        <div class="fit-result"></div>
+      </div>
+    </section>
+
+    <section class="section bg-light">
+      <div class="container split">
+        <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1100&q=85"
+          alt="Men's apparel craftsmanship detail">
+        <div>
+          <div class="eyebrow">Showroom Principle</div>
+          <h2>LESS NOISE. MORE CRAFTSMANSHIP.</h2>
+          <p class="muted">Our design architecture uses high contrast, restrained color palettes, condensed typography,
+            and structured grids so the clothing remains the primary focal point.</p>
+          <div class="btn-group" style="justify-content: flex-start; margin-top: 20px;">
+            <a class="btn" href="contact.html">Get in Touch</a>
+            <a class="btn outline" href="wholesale.html">Explore Wholesale</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <span class="brand-icon">F</span> FORMEN
+          </a>
+          <p>Contemporary men's shirts, T-shirts and polos for retail buyers and wholesale partners. Crafted with focus
+            on fit, fabric and longevity.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram" data-action="Follow FORMEN on Instagram"><span>📷</span> Instagram</a>
+            <a href="#" aria-label="Facebook" data-action="Follow FORMEN on Facebook"><span>📘</span> Facebook</a>
+            <a href="#" aria-label="LinkedIn" data-action="Connect on LinkedIn"><span>💼</span> LinkedIn</a>
+            <a href="#" aria-label="Twitter" data-action="Follow FORMEN on X / Twitter"><span>🌐</span> Twitter/X</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>SHOP</h4>
+          <a href="shirts.html">Shirts Collection</a>
+          <a href="tshirts.html">T-Shirts Collection</a>
+          <a href="polos.html">Polo Shirts</a>
+          <a href="index.html#new">New Arrivals</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>BUSINESS &amp; SUPPORT</h4>
+          <a href="wholesale.html">Wholesale Catalogue</a>
+          <a href="size-guide.html">Size &amp; Fit Guide</a>
+          <a href="faq.html">Ordering &amp; Shipping FAQ</a>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4>STAY CONNECTED</h4>
+          <p>Subscribe to receive new season drop alerts, fabric guides, and wholesale volume pricing.</p>
+          <form class="newsletter-form" data-demo>
+            <input type="email" required placeholder="Enter your business email...">
+            <button class="btn" type="submit">Subscribe</button>
+          </form>
+        </div>
       </div>
 
-      <div class="fit-grid">
-        <div class="fit" data-fit="Slim">
-          <div class="mono">01 / FIT</div>
-          <h3>SLIM</h3>
-          <p>Tapered through chest and body. Clean, tailored armholes and narrow sleeve openings.</p>
-        </div>
-        <div class="fit" data-fit="Regular">
-          <div class="mono">02 / FIT</div>
-          <h3>REGULAR</h3>
-          <p>Balanced everyday silhouette. Classic straight drop with traditional comfort allowance.</p>
-        </div>
-        <div class="fit" data-fit="Relaxed">
-          <div class="mono">03 / FIT</div>
-          <h3>RELAXED</h3>
-          <p>More breathing room across shoulders and torso. Soft natural drape for easy wear.</p>
-        </div>
-        <div class="fit" data-fit="Oversized">
-          <div class="mono">04 / FIT</div>
-          <h3>OVERSIZED</h3>
-          <p>Intentional boxy volume, dropped shoulders, and wide sleeves for streetwear styling.</p>
-        </div>
+      <div class="copyright">
+        <span>© 2026 FORMEN Menswear. All rights reserved.</span>
+        <span>Retail · Wholesale · Private Label · Contemporary Apparel</span>
       </div>
-      <div class="fit-result"></div>
     </div>
-  </section>
+  </footer>
+  <div class="flash"></div>
 
-  <section class="section bg-light">
-    <div class="container split">
-      <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1100&q=85" alt="Men's apparel craftsmanship detail">
-      <div>
-        <div class="eyebrow">Showroom Principle</div>
-        <h2>LESS NOISE. MORE CRAFTSMANSHIP.</h2>
-        <p class="muted">Our design architecture uses high contrast, restrained color palettes, condensed typography, and structured grids so the clothing remains the primary focal point.</p>
-        <div class="btn-group" style="justify-content: flex-start; margin-top: 20px;">
-          <a class="btn" href="contact.html">Get in Touch</a>
-          <a class="btn outline" href="wholesale.html">Explore Wholesale</a>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a class="brand" href="index.html">
-          <span class="brand-icon">F</span> FORMEN
-        </a>
-        <p>Contemporary men's shirts, T-shirts and polos for retail buyers and wholesale partners. Crafted with focus on fit, fabric and longevity.</p>
-        <div class="social-links">
-          <a href="#" aria-label="Instagram" data-action="Follow FORMEN on Instagram"><span>📷</span> Instagram</a>
-          <a href="#" aria-label="Facebook" data-action="Follow FORMEN on Facebook"><span>📘</span> Facebook</a>
-          <a href="#" aria-label="LinkedIn" data-action="Connect on LinkedIn"><span>💼</span> LinkedIn</a>
-          <a href="#" aria-label="Twitter" data-action="Follow FORMEN on X / Twitter"><span>🌐</span> Twitter/X</a>
-        </div>
-      </div>
-
-      <div class="footer-col">
-        <h4>SHOP</h4>
-        <a href="shirts.html">Shirts Collection</a>
-        <a href="tshirts.html">T-Shirts Collection</a>
-        <a href="polos.html">Polo Shirts</a>
-        <a href="index.html#new">New Arrivals</a>
-      </div>
-
-      <div class="footer-col">
-        <h4>BUSINESS &amp; SUPPORT</h4>
-        <a href="wholesale.html">Wholesale Catalogue</a>
-        <a href="size-guide.html">Size &amp; Fit Guide</a>
-        <a href="faq.html">Ordering &amp; Shipping FAQ</a>
-      </div>
-
-      <div class="footer-newsletter">
-        <h4>STAY CONNECTED</h4>
-        <p>Subscribe to receive new season drop alerts, fabric guides, and wholesale volume pricing.</p>
-        <form class="newsletter-form" data-demo>
-          <input type="email" required placeholder="Enter your business email...">
-          <button class="btn" type="submit">Subscribe</button>
-        </form>
-      </div>
-    </div>
-
-    <div class="copyright">
-      <span>© 2026 FORMEN Menswear. All rights reserved.</span>
-      <span>Retail · Wholesale · Private Label · Contemporary Apparel</span>
-    </div>
-  </div>
-</footer>
-<div class="flash"></div>
-
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>

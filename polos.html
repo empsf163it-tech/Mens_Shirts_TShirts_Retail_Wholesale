@@ -1,22 +1,43 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Explore contemporary men's polo shirts including pique, mercerized knit, zip collar and performance polos.">
+  <meta name="description"
+    content="Explore contemporary men's polo shirts including pique, mercerized knit, zip collar and performance polos.">
   <title>Polo Shirts Collection | FORMEN</title>
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="alternate icon" href="images/favicon.svg">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="index.html">
-      <span class="brand-icon">F</span> FORMEN
-    </a>
-    <nav class="nav-menu">
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="brand-icon">F</span> FORMEN
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="shirts.html">Shirts</a>
+        <a href="tshirts.html">T-Shirts</a>
+        <a href="polos.html" class="active">Polos</a>
+        <a href="wholesale.html">Wholesale</a>
+        <a href="size-guide.html">Size Guide</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="utility-login" data-auth-toggle aria-label="Login">
+          <span>Login</span>
+        </button>
+        <button class="menu-toggle" aria-label="Open navigation">☰</button>
+      </div>
+    </div>
+    <div class="container mobile-menu">
       <a href="index.html">Home</a>
       <a href="shirts.html">Shirts</a>
       <a href="tshirts.html">T-Shirts</a>
@@ -26,290 +47,285 @@
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
       <a href="faq.html">FAQ</a>
-    </nav>
-    <div class="nav-actions">
-      <button class="utility-login" data-auth-toggle aria-label="Login">
-        <span>Login</span>
-      </button>
-      <button class="menu-toggle" aria-label="Open navigation">☰</button>
+      <a href="#" class="mobile-login-btn" data-auth-toggle>Login</a>
+    </div>
+  </header>
+
+  <!-- Auth Modal Popup -->
+  <div class="auth-modal-overlay" id="authModal">
+    <div class="auth-modal">
+      <button class="auth-close" data-auth-close aria-label="Close Modal">&times;</button>
+
+      <div class="auth-tabs">
+        <button class="auth-tab active" data-auth-tab="login">Sign In</button>
+        <button class="auth-tab" data-auth-tab="signup">Create Account</button>
+      </div>
+
+      <form class="auth-form active" id="loginForm" data-demo>
+        <div class="eyebrow" style="margin-bottom: 4px;">Welcome Back</div>
+        <h2>Sign In to FORMEN</h2>
+        <p class="muted" style="margin-bottom: 20px;">Access your orders, wholesale catalogues &amp; account settings.
+        </p>
+
+        <div class="field">
+          <label>Email Address *</label>
+          <input type="email" required placeholder="name@example.com">
+        </div>
+        <div class="field">
+          <label>Password *</label>
+          <input type="password" required placeholder="••••••••">
+        </div>
+        <div class="auth-options">
+          <label class="checkbox-label">
+            <input type="checkbox" checked> Remember me
+          </label>
+          <a href="#" class="forgot-link" data-action="Password reset link sent to your email.">Forgot Password?</a>
+        </div>
+        <button class="btn full-btn" type="submit">Sign In</button>
+      </form>
+
+      <form class="auth-form" id="signupForm" data-demo>
+        <div class="eyebrow" style="margin-bottom: 4px;">Join FORMEN</div>
+        <h2>Create an Account</h2>
+        <p class="muted" style="margin-bottom: 20px;">Register for exclusive collections, wholesale pricing &amp; fast
+          checkout.</p>
+
+        <div class="field">
+          <label>Full Name *</label>
+          <input type="text" required placeholder="John Doe">
+        </div>
+        <div class="field">
+          <label>Email Address *</label>
+          <input type="email" required placeholder="name@example.com">
+        </div>
+        <div class="field">
+          <label>Account Type</label>
+          <select>
+            <option>Retail Customer</option>
+            <option>Wholesale Buyer / Reseller</option>
+            <option>Private Label Partner</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Password *</label>
+          <input type="password" required placeholder="••••••••">
+        </div>
+        <button class="btn full-btn" type="submit">Create Account</button>
+      </form>
     </div>
   </div>
-  <div class="container mobile-menu">
-    <a href="index.html">Home</a>
-    <a href="shirts.html">Shirts</a>
-    <a href="tshirts.html">T-Shirts</a>
-    <a href="polos.html" class="active">Polos</a>
-    <a href="wholesale.html">Wholesale</a>
-    <a href="size-guide.html">Size Guide</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="faq.html">FAQ</a>
-    <a href="#" data-auth-toggle>Login</a>
-  </div>
-</header>
 
-<!-- Auth Modal Popup -->
-<div class="auth-modal-overlay" id="authModal">
-  <div class="auth-modal">
-    <button class="auth-close" data-auth-close aria-label="Close Modal">&times;</button>
-    
-    <div class="auth-tabs">
-      <button class="auth-tab active" data-auth-tab="login">Sign In</button>
-      <button class="auth-tab" data-auth-tab="signup">Create Account</button>
-    </div>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow">Polo Collection</div>
+        <h1>MEN'S POLO SHIRTS</h1>
+        <p>Elevated smart-casual polos featuring mercerized piqué cotton, fine-gauge knits, zip collars, and tipped
+          details.</p>
+      </div>
+    </section>
 
-    <form class="auth-form active" id="loginForm" data-demo>
-      <div class="eyebrow" style="margin-bottom: 4px;">Welcome Back</div>
-      <h2>Sign In to FORMEN</h2>
-      <p class="muted" style="margin-bottom: 20px;">Access your orders, wholesale catalogues &amp; account settings.</p>
-      
-      <div class="field">
-        <label>Email Address *</label>
-        <input type="email" required placeholder="name@example.com">
-      </div>
-      <div class="field">
-        <label>Password *</label>
-        <input type="password" required placeholder="••••••••">
-      </div>
-      <div class="auth-options">
-        <label class="checkbox-label">
-          <input type="checkbox" checked> Remember me
-        </label>
-        <a href="#" class="forgot-link" data-action="Password reset link sent to your email.">Forgot Password?</a>
-      </div>
-      <button class="btn full-btn" type="submit">Sign In</button>
-    </form>
+    <section class="section">
+      <div class="container">
+        <div class="filters">
+          <button class="filter active" data-filter="all">All Polos (8)</button>
+          <button class="filter" data-filter="slim">Slim Fit</button>
+          <button class="filter" data-filter="regular">Regular Fit</button>
+          <button class="filter" data-filter="relaxed">Relaxed Fit</button>
+        </div>
 
-    <form class="auth-form" id="signupForm" data-demo>
-      <div class="eyebrow" style="margin-bottom: 4px;">Join FORMEN</div>
-      <h2>Create an Account</h2>
-      <p class="muted" style="margin-bottom: 20px;">Register for exclusive collections, wholesale pricing &amp; fast checkout.</p>
-      
-      <div class="field">
-        <label>Full Name *</label>
-        <input type="text" required placeholder="John Doe">
-      </div>
-      <div class="field">
-        <label>Email Address *</label>
-        <input type="email" required placeholder="name@example.com">
-      </div>
-      <div class="field">
-        <label>Account Type</label>
-        <select>
-          <option>Retail Customer</option>
-          <option>Wholesale Buyer / Reseller</option>
-          <option>Private Label Partner</option>
-        </select>
-      </div>
-      <div class="field">
-        <label>Password *</label>
-        <input type="password" required placeholder="••••••••">
-      </div>
-      <button class="btn full-btn" type="submit">Create Account</button>
-    </form>
-  </div>
-</div>
+        <div class="products">
+          <article class="product" data-category="regular">
+            <div class="product-img">
+              <span class="tag">POPULAR</span>
+              <img src="https://images.unsplash.com/photo-1627225924765-552d49cf47ad?auto=format&fit=crop&w=900&q=85"
+                alt="Clean Pique Polo">
+              <a class="quick" href="product.html">QUICK VIEW</a>
+            </div>
+            <div class="product-info">
+              <h3>Clean Mercerized Pique Polo</h3>
+              <p>100% Mercerized Pique Cotton · Regular Fit</p>
+              <div class="price-row">
+                <span class="price">₹1,299</span>
+                <span class="code">SKU-PO001</span>
+              </div>
+            </div>
+          </article>
 
-<main>
-  <section class="page-hero">
+          <article class="product" data-category="slim">
+            <div class="product-img">
+              <span class="tag">LUXURY</span>
+              <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=900&q=85"
+                alt="Fine Gauge Knit Polo">
+              <a class="quick" href="product.html">QUICK VIEW</a>
+            </div>
+            <div class="product-info">
+              <h3>Fine-Gauge Cotton Knit Polo</h3>
+              <p>100% Combed Cotton Knit · Slim Fit</p>
+              <div class="price-row">
+                <span class="price">₹1,599</span>
+                <span class="code">SKU-PO002</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product" data-category="regular">
+            <div class="product-img">
+              <span class="tag">MODERN</span>
+              <img src="https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=900&q=85"
+                alt="Minimalist Zip Collar Polo">
+              <a class="quick" href="product.html">QUICK VIEW</a>
+            </div>
+            <div class="product-info">
+              <h3>Minimalist Zip Collar Polo</h3>
+              <p>Smooth Stretch Jersey · Regular Fit</p>
+              <div class="price-row">
+                <span class="price">₹1,499</span>
+                <span class="code">SKU-PO003</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product" data-category="relaxed">
+            <div class="product-img">
+              <span class="tag">SUMMER</span>
+              <img src="https://images.unsplash.com/photo-1621072156002-e2fccdc0b176?auto=format&fit=crop&w=900&q=85"
+                alt="Linen Blend Resort Polo">
+              <a class="quick" href="product.html">QUICK VIEW</a>
+            </div>
+            <div class="product-info">
+              <h3>Linen Blend Open-Placket Polo</h3>
+              <p>55% Linen 45% Cotton · Relaxed Fit</p>
+              <div class="price-row">
+                <span class="price">₹1,699</span>
+                <span class="code">SKU-PO004</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product" data-category="slim">
+            <div class="product-img">
+              <span class="tag">SPORT</span>
+              <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=900&q=85"
+                alt="Tipped Collar Heritage Polo">
+              <a class="quick" href="product.html">QUICK VIEW</a>
+            </div>
+            <div class="product-info">
+              <h3>Tipped Collar Heritage Polo</h3>
+              <p>Heavyweight Pique · Slim Fit</p>
+              <div class="price-row">
+                <span class="price">₹1,399</span>
+                <span class="code">SKU-PO005</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product" data-category="regular">
+            <div class="product-img">
+              <span class="tag">AUTUMN</span>
+              <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=900&q=85"
+                alt="Long Sleeve Knit Polo">
+              <a class="quick" href="product.html">QUICK VIEW</a>
+            </div>
+            <div class="product-info">
+              <h3>Long Sleeve Tailored Knit Polo</h3>
+              <p>Milano Knit Cotton · Regular Fit</p>
+              <div class="price-row">
+                <span class="price">₹1,799</span>
+                <span class="code">SKU-PO006</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product" data-category="slim">
+            <div class="product-img">
+              <span class="tag">PERFORMANCE</span>
+              <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85"
+                alt="Technical Golf Polo">
+              <a class="quick" href="product.html">QUICK VIEW</a>
+            </div>
+            <div class="product-info">
+              <h3>Technical Breathable Golf Polo</h3>
+              <p>Moisture Wicking Poly-Pique · Slim Fit</p>
+              <div class="price-row">
+                <span class="price">₹1,349</span>
+                <span class="code">SKU-PO007</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product" data-category="relaxed">
+            <div class="product-img">
+              <span class="tag">RETRO</span>
+              <img src="https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=900&q=85"
+                alt="Textured Terry Cloth Polo">
+              <a class="quick" href="product.html">QUICK VIEW</a>
+            </div>
+            <div class="product-info">
+              <h3>Textured Towelling Terry Polo</h3>
+              <p>100% Plush Terry Cotton · Relaxed Fit</p>
+              <div class="price-row">
+                <span class="price">₹1,549</span>
+                <span class="code">SKU-PO008</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
     <div class="container">
-      <div class="eyebrow">Polo Collection</div>
-      <h1>MEN'S POLO SHIRTS</h1>
-      <p>Elevated smart-casual polos featuring mercerized piqué cotton, fine-gauge knits, zip collars, and tipped details.</p>
-    </div>
-  </section>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <span class="brand-icon">F</span> FORMEN
+          </a>
+          <p>Contemporary men's shirts, T-shirts and polos for retail buyers and wholesale partners. Crafted with focus
+            on fit, fabric and longevity.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram" data-action="Follow FORMEN on Instagram"><span>📷</span> Instagram</a>
+            <a href="#" aria-label="Facebook" data-action="Follow FORMEN on Facebook"><span>📘</span> Facebook</a>
+            <a href="#" aria-label="LinkedIn" data-action="Connect on LinkedIn"><span>💼</span> LinkedIn</a>
+            <a href="#" aria-label="Twitter" data-action="Follow FORMEN on X / Twitter"><span>🌐</span> Twitter/X</a>
+          </div>
+        </div>
 
-  <section class="section">
-    <div class="container">
-      <div class="filters">
-        <button class="filter active" data-filter="all">All Polos (8)</button>
-        <button class="filter" data-filter="slim">Slim Fit</button>
-        <button class="filter" data-filter="regular">Regular Fit</button>
-        <button class="filter" data-filter="relaxed">Relaxed Fit</button>
-      </div>
+        <div class="footer-col">
+          <h4>SHOP</h4>
+          <a href="shirts.html">Shirts Collection</a>
+          <a href="tshirts.html">T-Shirts Collection</a>
+          <a href="polos.html">Polo Shirts</a>
+          <a href="index.html#new">New Arrivals</a>
+        </div>
 
-      <div class="products">
-        <article class="product" data-category="regular">
-          <div class="product-img">
-            <span class="tag">POPULAR</span>
-            <img src="https://images.unsplash.com/photo-1627225924765-552d49cf47ad?auto=format&fit=crop&w=900&q=85" alt="Clean Pique Polo">
-            <a class="quick" href="product.html">QUICK VIEW</a>
-          </div>
-          <div class="product-info">
-            <h3>Clean Mercerized Pique Polo</h3>
-            <p>100% Mercerized Pique Cotton · Regular Fit</p>
-            <div class="price-row">
-              <span class="price">₹1,299</span>
-              <span class="code">SKU-PO001</span>
-            </div>
-          </div>
-        </article>
+        <div class="footer-col">
+          <h4>BUSINESS &amp; SUPPORT</h4>
+          <a href="wholesale.html">Wholesale Catalogue</a>
+          <a href="size-guide.html">Size &amp; Fit Guide</a>
+          <a href="faq.html">Ordering &amp; Shipping FAQ</a>
+        </div>
 
-        <article class="product" data-category="slim">
-          <div class="product-img">
-            <span class="tag">LUXURY</span>
-            <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=900&q=85" alt="Fine Gauge Knit Polo">
-            <a class="quick" href="product.html">QUICK VIEW</a>
-          </div>
-          <div class="product-info">
-            <h3>Fine-Gauge Cotton Knit Polo</h3>
-            <p>100% Combed Cotton Knit · Slim Fit</p>
-            <div class="price-row">
-              <span class="price">₹1,599</span>
-              <span class="code">SKU-PO002</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="product" data-category="regular">
-          <div class="product-img">
-            <span class="tag">MODERN</span>
-            <img src="https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=900&q=85" alt="Minimalist Zip Collar Polo">
-            <a class="quick" href="product.html">QUICK VIEW</a>
-          </div>
-          <div class="product-info">
-            <h3>Minimalist Zip Collar Polo</h3>
-            <p>Smooth Stretch Jersey · Regular Fit</p>
-            <div class="price-row">
-              <span class="price">₹1,499</span>
-              <span class="code">SKU-PO003</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="product" data-category="relaxed">
-          <div class="product-img">
-            <span class="tag">SUMMER</span>
-            <img src="https://images.unsplash.com/photo-1621072156002-e2fccdc0b176?auto=format&fit=crop&w=900&q=85" alt="Linen Blend Resort Polo">
-            <a class="quick" href="product.html">QUICK VIEW</a>
-          </div>
-          <div class="product-info">
-            <h3>Linen Blend Open-Placket Polo</h3>
-            <p>55% Linen 45% Cotton · Relaxed Fit</p>
-            <div class="price-row">
-              <span class="price">₹1,699</span>
-              <span class="code">SKU-PO004</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="product" data-category="slim">
-          <div class="product-img">
-            <span class="tag">SPORT</span>
-            <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=900&q=85" alt="Tipped Collar Heritage Polo">
-            <a class="quick" href="product.html">QUICK VIEW</a>
-          </div>
-          <div class="product-info">
-            <h3>Tipped Collar Heritage Polo</h3>
-            <p>Heavyweight Pique · Slim Fit</p>
-            <div class="price-row">
-              <span class="price">₹1,399</span>
-              <span class="code">SKU-PO005</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="product" data-category="regular">
-          <div class="product-img">
-            <span class="tag">AUTUMN</span>
-            <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=900&q=85" alt="Long Sleeve Knit Polo">
-            <a class="quick" href="product.html">QUICK VIEW</a>
-          </div>
-          <div class="product-info">
-            <h3>Long Sleeve Tailored Knit Polo</h3>
-            <p>Milano Knit Cotton · Regular Fit</p>
-            <div class="price-row">
-              <span class="price">₹1,799</span>
-              <span class="code">SKU-PO006</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="product" data-category="slim">
-          <div class="product-img">
-            <span class="tag">PERFORMANCE</span>
-            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85" alt="Technical Golf Polo">
-            <a class="quick" href="product.html">QUICK VIEW</a>
-          </div>
-          <div class="product-info">
-            <h3>Technical Breathable Golf Polo</h3>
-            <p>Moisture Wicking Poly-Pique · Slim Fit</p>
-            <div class="price-row">
-              <span class="price">₹1,349</span>
-              <span class="code">SKU-PO007</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="product" data-category="relaxed">
-          <div class="product-img">
-            <span class="tag">RETRO</span>
-            <img src="https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=900&q=85" alt="Textured Terry Cloth Polo">
-            <a class="quick" href="product.html">QUICK VIEW</a>
-          </div>
-          <div class="product-info">
-            <h3>Textured Towelling Terry Polo</h3>
-            <p>100% Plush Terry Cotton · Relaxed Fit</p>
-            <div class="price-row">
-              <span class="price">₹1,549</span>
-              <span class="code">SKU-PO008</span>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a class="brand" href="index.html">
-          <span class="brand-icon">F</span> FORMEN
-        </a>
-        <p>Contemporary men's shirts, T-shirts and polos for retail buyers and wholesale partners. Crafted with focus on fit, fabric and longevity.</p>
-        <div class="social-links">
-          <a href="#" aria-label="Instagram" data-action="Follow FORMEN on Instagram"><span>📷</span> Instagram</a>
-          <a href="#" aria-label="Facebook" data-action="Follow FORMEN on Facebook"><span>📘</span> Facebook</a>
-          <a href="#" aria-label="LinkedIn" data-action="Connect on LinkedIn"><span>💼</span> LinkedIn</a>
-          <a href="#" aria-label="Twitter" data-action="Follow FORMEN on X / Twitter"><span>🌐</span> Twitter/X</a>
+        <div class="footer-newsletter">
+          <h4>STAY CONNECTED</h4>
+          <p>Subscribe to receive new season drop alerts, fabric guides, and wholesale volume pricing.</p>
+          <form class="newsletter-form" data-demo>
+            <input type="email" required placeholder="Enter your business email...">
+            <button class="btn" type="submit">Subscribe</button>
+          </form>
         </div>
       </div>
 
-      <div class="footer-col">
-        <h4>SHOP</h4>
-        <a href="shirts.html">Shirts Collection</a>
-        <a href="tshirts.html">T-Shirts Collection</a>
-        <a href="polos.html">Polo Shirts</a>
-        <a href="index.html#new">New Arrivals</a>
-      </div>
-
-      <div class="footer-col">
-        <h4>BUSINESS &amp; SUPPORT</h4>
-        <a href="wholesale.html">Wholesale Catalogue</a>
-        <a href="size-guide.html">Size &amp; Fit Guide</a>
-        <a href="faq.html">Ordering &amp; Shipping FAQ</a>
-      </div>
-
-      <div class="footer-newsletter">
-        <h4>STAY CONNECTED</h4>
-        <p>Subscribe to receive new season drop alerts, fabric guides, and wholesale volume pricing.</p>
-        <form class="newsletter-form" data-demo>
-          <input type="email" required placeholder="Enter your business email...">
-          <button class="btn" type="submit">Subscribe</button>
-        </form>
+      <div class="copyright">
+        <span>© 2026 FORMEN Menswear. All rights reserved.</span>
+        <span>Retail · Wholesale · Private Label · Contemporary Apparel</span>
       </div>
     </div>
+  </footer>
+  <div class="flash"></div>
 
-    <div class="copyright">
-      <span>© 2026 FORMEN Menswear. All rights reserved.</span>
-      <span>Retail · Wholesale · Private Label · Contemporary Apparel</span>
-    </div>
-  </div>
-</footer>
-<div class="flash"></div>
-
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>

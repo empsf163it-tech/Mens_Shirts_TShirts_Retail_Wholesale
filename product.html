@@ -1,22 +1,43 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Oxford Regular Shirt product details, specifications, size selection, fabric composition and customer reviews.">
+  <meta name="description"
+    content="Oxford Regular Shirt product details, specifications, size selection, fabric composition and customer reviews.">
   <title>Oxford Regular Shirt | FORMEN</title>
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="alternate icon" href="images/favicon.svg">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="index.html">
-      <span class="brand-icon">F</span> FORMEN
-    </a>
-    <nav class="nav-menu">
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="brand-icon">F</span> FORMEN
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="shirts.html" class="active">Shirts</a>
+        <a href="tshirts.html">T-Shirts</a>
+        <a href="polos.html">Polos</a>
+        <a href="wholesale.html">Wholesale</a>
+        <a href="size-guide.html">Size Guide</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="utility-login" data-auth-toggle aria-label="Login">
+          <span>Login</span>
+        </button>
+        <button class="menu-toggle" aria-label="Open navigation">☰</button>
+      </div>
+    </div>
+    <div class="container mobile-menu">
       <a href="index.html">Home</a>
       <a href="shirts.html" class="active">Shirts</a>
       <a href="tshirts.html">T-Shirts</a>
@@ -26,326 +47,332 @@
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
       <a href="faq.html">FAQ</a>
-    </nav>
-    <div class="nav-actions">
-      <button class="utility-login" data-auth-toggle aria-label="Login">
-        <span>Login</span>
-      </button>
-      <button class="menu-toggle" aria-label="Open navigation">☰</button>
+      <a href="#" class="mobile-login-btn" data-auth-toggle>Login</a>
+    </div>
+  </header>
+
+  <!-- Auth Modal Popup -->
+  <div class="auth-modal-overlay" id="authModal">
+    <div class="auth-modal">
+      <button class="auth-close" data-auth-close aria-label="Close Modal">&times;</button>
+
+      <div class="auth-tabs">
+        <button class="auth-tab active" data-auth-tab="login">Sign In</button>
+        <button class="auth-tab" data-auth-tab="signup">Create Account</button>
+      </div>
+
+      <form class="auth-form active" id="loginForm" data-demo>
+        <div class="eyebrow" style="margin-bottom: 4px;">Welcome Back</div>
+        <h2>Sign In to FORMEN</h2>
+        <p class="muted" style="margin-bottom: 20px;">Access your orders, wholesale catalogues &amp; account settings.
+        </p>
+
+        <div class="field">
+          <label>Email Address *</label>
+          <input type="email" required placeholder="name@example.com">
+        </div>
+        <div class="field">
+          <label>Password *</label>
+          <input type="password" required placeholder="••••••••">
+        </div>
+        <div class="auth-options">
+          <label class="checkbox-label">
+            <input type="checkbox" checked> Remember me
+          </label>
+          <a href="#" class="forgot-link" data-action="Password reset link sent to your email.">Forgot Password?</a>
+        </div>
+        <button class="btn full-btn" type="submit">Sign In</button>
+      </form>
+
+      <form class="auth-form" id="signupForm" data-demo>
+        <div class="eyebrow" style="margin-bottom: 4px;">Join FORMEN</div>
+        <h2>Create an Account</h2>
+        <p class="muted" style="margin-bottom: 20px;">Register for exclusive collections, wholesale pricing &amp; fast
+          checkout.</p>
+
+        <div class="field">
+          <label>Full Name *</label>
+          <input type="text" required placeholder="John Doe">
+        </div>
+        <div class="field">
+          <label>Email Address *</label>
+          <input type="email" required placeholder="name@example.com">
+        </div>
+        <div class="field">
+          <label>Account Type</label>
+          <select>
+            <option>Retail Customer</option>
+            <option>Wholesale Buyer / Reseller</option>
+            <option>Private Label Partner</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Password *</label>
+          <input type="password" required placeholder="••••••••">
+        </div>
+        <button class="btn full-btn" type="submit">Create Account</button>
+      </form>
     </div>
   </div>
-  <div class="container mobile-menu">
-    <a href="index.html">Home</a>
-    <a href="shirts.html" class="active">Shirts</a>
-    <a href="tshirts.html">T-Shirts</a>
-    <a href="polos.html">Polos</a>
-    <a href="wholesale.html">Wholesale</a>
-    <a href="size-guide.html">Size Guide</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="faq.html">FAQ</a>
-    <a href="#" data-auth-toggle>Login</a>
-  </div>
-</header>
 
-<!-- Auth Modal Popup -->
-<div class="auth-modal-overlay" id="authModal">
-  <div class="auth-modal">
-    <button class="auth-close" data-auth-close aria-label="Close Modal">&times;</button>
-    
-    <div class="auth-tabs">
-      <button class="auth-tab active" data-auth-tab="login">Sign In</button>
-      <button class="auth-tab" data-auth-tab="signup">Create Account</button>
-    </div>
+  <main>
+    <section class="section">
+      <div class="container product-detail">
+        <div class="detail-image">
+          <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=1400&q=85"
+            alt="Oxford Regular Shirt Front View">
+        </div>
 
-    <form class="auth-form active" id="loginForm" data-demo>
-      <div class="eyebrow" style="margin-bottom: 4px;">Welcome Back</div>
-      <h2>Sign In to FORMEN</h2>
-      <p class="muted" style="margin-bottom: 20px;">Access your orders, wholesale catalogues &amp; account settings.</p>
-      
-      <div class="field">
-        <label>Email Address *</label>
-        <input type="email" required placeholder="name@example.com">
-      </div>
-      <div class="field">
-        <label>Password *</label>
-        <input type="password" required placeholder="••••••••">
-      </div>
-      <div class="auth-options">
-        <label class="checkbox-label">
-          <input type="checkbox" checked> Remember me
-        </label>
-        <a href="#" class="forgot-link" data-action="Password reset link sent to your email.">Forgot Password?</a>
-      </div>
-      <button class="btn full-btn" type="submit">Sign In</button>
-    </form>
+        <div class="detail-copy">
+          <div class="eyebrow">Shirt Collection · SKU-SH001</div>
+          <h1>OXFORD REGULAR SHIRT</h1>
+          <div class="price-big">₹1,899 <span
+              style="font-size: 1rem; font-weight: 500; color: var(--muted); margin-left: 10px;">(Wholesale Volume
+              Discount Available)</span></div>
+          <p class="muted" style="font-size: 1.1rem; line-height: 1.6;">A clean everyday Oxford button-down shirt
+            crafted from 100% two-ply combed cotton. Features a structured button-down collar, single chest pocket,
+            curved hem, and double-stitched durability.</p>
 
-    <form class="auth-form" id="signupForm" data-demo>
-      <div class="eyebrow" style="margin-bottom: 4px;">Join FORMEN</div>
-      <h2>Create an Account</h2>
-      <p class="muted" style="margin-bottom: 20px;">Register for exclusive collections, wholesale pricing &amp; fast checkout.</p>
-      
-      <div class="field">
-        <label>Full Name *</label>
-        <input type="text" required placeholder="John Doe">
-      </div>
-      <div class="field">
-        <label>Email Address *</label>
-        <input type="email" required placeholder="name@example.com">
-      </div>
-      <div class="field">
-        <label>Account Type</label>
-        <select>
-          <option>Retail Customer</option>
-          <option>Wholesale Buyer / Reseller</option>
-          <option>Private Label Partner</option>
-        </select>
-      </div>
-      <div class="field">
-        <label>Password *</label>
-        <input type="password" required placeholder="••••••••">
-      </div>
-      <button class="btn full-btn" type="submit">Create Account</button>
-    </form>
-  </div>
-</div>
-
-<main>
-  <section class="section">
-    <div class="container product-detail">
-      <div class="detail-image">
-        <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=1400&q=85" alt="Oxford Regular Shirt Front View">
-      </div>
-
-      <div class="detail-copy">
-        <div class="eyebrow">Shirt Collection · SKU-SH001</div>
-        <h1>OXFORD REGULAR SHIRT</h1>
-        <div class="price-big">₹1,899 <span style="font-size: 1rem; font-weight: 500; color: var(--muted); margin-left: 10px;">(Wholesale Volume Discount Available)</span></div>
-        <p class="muted" style="font-size: 1.1rem; line-height: 1.6;">A clean everyday Oxford button-down shirt crafted from 100% two-ply combed cotton. Features a structured button-down collar, single chest pocket, curved hem, and double-stitched durability.</p>
-
-        <div class="options">
-          <div class="option-title">Select Colorway</div>
-          <div class="swatches">
-            <button class="swatch selected" style="background: #f5f3ed;" title="Classic White"></button>
-            <button class="swatch" style="background: #25354b;" title="Navy Blue"></button>
-            <button class="swatch" style="background: #161616;" title="Jet Black"></button>
-            <button class="swatch" style="background: #a3b1c6;" title="Sky Blue"></button>
+          <div class="options">
+            <div class="option-title">Select Colorway</div>
+            <div class="swatches">
+              <button class="swatch selected" style="background: #f5f3ed;" title="Classic White"></button>
+              <button class="swatch" style="background: #25354b;" title="Navy Blue"></button>
+              <button class="swatch" style="background: #161616;" title="Jet Black"></button>
+              <button class="swatch" style="background: #a3b1c6;" title="Sky Blue"></button>
+            </div>
           </div>
-        </div>
 
-        <div class="options">
-          <div class="option-title">Select Size <a href="size-guide.html" style="color: var(--rust); font-size: 0.95rem; text-decoration: underline; margin-left: 15px;">View Size Chart →</a></div>
-          <div class="sizes">
-            <button class="size" data-size>XS</button>
-            <button class="size" data-size>S</button>
-            <button class="size selected" data-size>M</button>
-            <button class="size" data-size>L</button>
-            <button class="size" data-size>XL</button>
-            <button class="size" data-size>XXL</button>
-            <button class="size" data-size>3XL</button>
+          <div class="options">
+            <div class="option-title">Select Size <a href="size-guide.html"
+                style="color: var(--rust); font-size: 0.95rem; text-decoration: underline; margin-left: 15px;">View Size
+                Chart →</a></div>
+            <div class="sizes">
+              <button class="size" data-size>XS</button>
+              <button class="size" data-size>S</button>
+              <button class="size selected" data-size>M</button>
+              <button class="size" data-size>L</button>
+              <button class="size" data-size>XL</button>
+              <button class="size" data-size>XXL</button>
+              <button class="size" data-size>3XL</button>
+            </div>
           </div>
-        </div>
 
-        <div class="btn-group" style="justify-content: flex-start; margin-top: 25px;">
-          <button class="btn" data-action="Sample order enquiry initiated for Oxford Regular Shirt!">Order Sample / Request Quote</button>
-          <a class="btn outline" href="wholesale.html">Bulk Wholesale Enquiry</a>
-        </div>
-
-        <div class="detail-meta">
-          <div class="meta"><small>Fabric Material</small>100% Combed Oxford Cotton (180 GSM)</div>
-          <div class="meta"><small>Fit Profile</small>Classic Regular Fit</div>
-          <div class="meta"><small>Pattern &amp; Weave</small>Solid Basketweave Oxford</div>
-          <div class="meta"><small>Collar Type</small>Structured Button-Down</div>
-          <div class="meta"><small>Sleeve Length</small>Full Sleeve with Adjustable Cuff</div>
-          <div class="meta"><small>Care Instructions</small>Machine Wash Cold · Low Tumble Dry</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section bg-light">
-    <div class="container split">
-      <div>
-        <div class="eyebrow">Technical Craftsmanship</div>
-        <h2>KNOW THE PIECE IN DETAIL.</h2>
-        <p class="muted" style="font-size: 1.1rem;">Engineered for daily versatility and longevity. The fabric undergoes Sanforization to prevent shrinkage after washing, while 18-stitches-per-inch collar seam binding keeps the collar crisp without stiff synthetic interlinings.</p>
-        
-        <div style="margin-top: 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-          <div style="border-left: 3px solid var(--rust); padding-left: 15px;">
-            <strong>Shrinkage Safe</strong>
-            <p class="muted" style="font-size: 0.95rem; margin: 4px 0 0;">Pre-washed &amp; bio-treated for dimensional stability.</p>
+          <div class="btn-group" style="justify-content: flex-start; margin-top: 25px;">
+            <button class="btn" data-action="Sample order enquiry initiated for Oxford Regular Shirt!">Order Sample /
+              Request Quote</button>
+            <a class="btn outline" href="wholesale.html">Bulk Wholesale Enquiry</a>
           </div>
-          <div style="border-left: 3px solid var(--rust); padding-left: 15px;">
-            <strong>Reinforced Seams</strong>
-            <p class="muted" style="font-size: 0.95rem; margin: 4px 0 0;">Double-needle flat-fell armhole &amp; side seam construction.</p>
+
+          <div class="detail-meta">
+            <div class="meta"><small>Fabric Material</small>100% Combed Oxford Cotton (180 GSM)</div>
+            <div class="meta"><small>Fit Profile</small>Classic Regular Fit</div>
+            <div class="meta"><small>Pattern &amp; Weave</small>Solid Basketweave Oxford</div>
+            <div class="meta"><small>Collar Type</small>Structured Button-Down</div>
+            <div class="meta"><small>Sleeve Length</small>Full Sleeve with Adjustable Cuff</div>
+            <div class="meta"><small>Care Instructions</small>Machine Wash Cold · Low Tumble Dry</div>
           </div>
         </div>
       </div>
-      <img src="https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=1100&q=85" alt="Men's shirt detail craftsmanship">
-    </div>
-  </section>
+    </section>
 
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
+    <section class="section bg-light">
+      <div class="container split">
         <div>
-          <div class="eyebrow">Verified Buyer Feedback</div>
-          <h2>CUSTOMER &amp; BUYER REVIEWS.</h2>
-        </div>
-        <p>Rated 4.9/5 stars based on retail and wholesale buyer feedback.</p>
-      </div>
+          <div class="eyebrow">Technical Craftsmanship</div>
+          <h2>KNOW THE PIECE IN DETAIL.</h2>
+          <p class="muted" style="font-size: 1.1rem;">Engineered for daily versatility and longevity. The fabric
+            undergoes Sanforization to prevent shrinkage after washing, while 18-stitches-per-inch collar seam binding
+            keeps the collar crisp without stiff synthetic interlinings.</p>
 
-      <div class="contact-info-cards" style="grid-template-columns: repeat(3, 1fr);">
-        <div class="info-card">
-          <div style="color: #f59e0b; font-size: 1.2rem; margin-bottom: 8px;">★★★★★</div>
-          <h4>"Outstanding Oxford Quality"</h4>
-          <p>"The fabric weight is perfect — heavy enough to hold shape all day, but breathable. Size Medium fit perfectly."</p>
-          <p style="margin-top: 14px; font-weight: 700; color: var(--ink);">— Marcus V. (Retail Customer)</p>
+          <div style="margin-top: 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div style="border-left: 3px solid var(--rust); padding-left: 15px;">
+              <strong>Shrinkage Safe</strong>
+              <p class="muted" style="font-size: 0.95rem; margin: 4px 0 0;">Pre-washed &amp; bio-treated for dimensional
+                stability.</p>
+            </div>
+            <div style="border-left: 3px solid var(--rust); padding-left: 15px;">
+              <strong>Reinforced Seams</strong>
+              <p class="muted" style="font-size: 0.95rem; margin: 4px 0 0;">Double-needle flat-fell armhole &amp; side
+                seam construction.</p>
+            </div>
+          </div>
         </div>
-        <div class="info-card">
-          <div style="color: #f59e0b; font-size: 1.2rem; margin-bottom: 8px;">★★★★★</div>
-          <h4>"Great Wholesale Batch"</h4>
-          <p>"Ordered 150 units for our boutique store. Zero stitching defects across the batch and tags were crystal clear."</p>
-          <p style="margin-top: 14px; font-weight: 700; color: var(--ink);">— David K. (Boutique Stockist)</p>
+        <img src="https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=1100&q=85"
+          alt="Men's shirt detail craftsmanship">
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Verified Buyer Feedback</div>
+            <h2>CUSTOMER &amp; BUYER REVIEWS.</h2>
+          </div>
+          <p>Rated 4.9/5 stars based on retail and wholesale buyer feedback.</p>
         </div>
-        <div class="info-card">
-          <div style="color: #f59e0b; font-size: 1.2rem; margin-bottom: 8px;">★★★★★</div>
-          <h4>"Color Holds After Washing"</h4>
-          <p>"Have washed this shirt over 15 times now. Collar doesn't curl and color remains bright. Highly recommended."</p>
-          <p style="margin-top: 14px; font-weight: 700; color: var(--ink);">— Rahul S. (Verified Buyer)</p>
+
+        <div class="contact-info-cards" style="grid-template-columns: repeat(3, 1fr);">
+          <div class="info-card">
+            <div style="color: #f59e0b; font-size: 1.2rem; margin-bottom: 8px;">★★★★★</div>
+            <h4>"Outstanding Oxford Quality"</h4>
+            <p>"The fabric weight is perfect — heavy enough to hold shape all day, but breathable. Size Medium fit
+              perfectly."</p>
+            <p style="margin-top: 14px; font-weight: 700; color: var(--ink);">— Marcus V. (Retail Customer)</p>
+          </div>
+          <div class="info-card">
+            <div style="color: #f59e0b; font-size: 1.2rem; margin-bottom: 8px;">★★★★★</div>
+            <h4>"Great Wholesale Batch"</h4>
+            <p>"Ordered 150 units for our boutique store. Zero stitching defects across the batch and tags were crystal
+              clear."</p>
+            <p style="margin-top: 14px; font-weight: 700; color: var(--ink);">— David K. (Boutique Stockist)</p>
+          </div>
+          <div class="info-card">
+            <div style="color: #f59e0b; font-size: 1.2rem; margin-bottom: 8px;">★★★★★</div>
+            <h4>"Color Holds After Washing"</h4>
+            <p>"Have washed this shirt over 15 times now. Collar doesn't curl and color remains bright. Highly
+              recommended."</p>
+            <p style="margin-top: 14px; font-weight: 700; color: var(--ink);">— Rahul S. (Verified Buyer)</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section bg-light">
+    <section class="section bg-light">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Recommendations</div>
+            <h2>YOU MAY ALSO LIKE.</h2>
+          </div>
+          <a class="btn outline" href="shirts.html">View All Shirts</a>
+        </div>
+
+        <div class="products">
+          <article class="product">
+            <div class="product-img">
+              <span class="tag">NEW</span>
+              <img src="https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=900&q=85"
+                alt="Everyday Overshirt">
+              <a class="quick" href="product.html">QUICK VIEW</a>
+            </div>
+            <div class="product-info">
+              <h3>Everyday Heavy Overshirt</h3>
+              <p>Cotton Twill · Relaxed Fit</p>
+              <div class="price-row">
+                <span class="price">₹2,199</span>
+                <span class="code">SKU-SH002</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-img">
+              <span class="tag">FORMAL</span>
+              <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=900&q=85"
+                alt="Clean Formal Poplin Shirt">
+              <a class="quick" href="product.html">QUICK VIEW</a>
+            </div>
+            <div class="product-info">
+              <h3>Clean Formal Poplin Shirt</h3>
+              <p>Fine Poplin Cotton · Slim Fit</p>
+              <div class="price-row">
+                <span class="price">₹1,999</span>
+                <span class="code">SKU-SH003</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-img">
+              <span class="tag">SUMMER</span>
+              <img src="https://images.unsplash.com/photo-1621072156002-e2fccdc0b176?auto=format&fit=crop&w=900&q=85"
+                alt="Pure Linen Summer Shirt">
+              <a class="quick" href="product.html">QUICK VIEW</a>
+            </div>
+            <div class="product-info">
+              <h3>Pure Linen Breeze Shirt</h3>
+              <p>100% French Linen · Relaxed Fit</p>
+              <div class="price-row">
+                <span class="price">₹2,499</span>
+                <span class="code">SKU-SH004</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-img">
+              <span class="tag">POPULAR</span>
+              <img src="https://images.unsplash.com/photo-1627225924765-552d49cf47ad?auto=format&fit=crop&w=900&q=85"
+                alt="Clean Mercerized Pique Polo">
+              <a class="quick" href="polos.html">QUICK VIEW</a>
+            </div>
+            <div class="product-info">
+              <h3>Clean Mercerized Pique Polo</h3>
+              <p>Pique Cotton · Regular Fit</p>
+              <div class="price-row">
+                <span class="price">₹1,299</span>
+                <span class="code">SKU-PO001</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
     <div class="container">
-      <div class="section-head">
-        <div>
-          <div class="eyebrow">Recommendations</div>
-          <h2>YOU MAY ALSO LIKE.</h2>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <span class="brand-icon">F</span> FORMEN
+          </a>
+          <p>Contemporary men's shirts, T-shirts and polos for retail buyers and wholesale partners. Crafted with focus
+            on fit, fabric and longevity.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram" data-action="Follow FORMEN on Instagram"><span>📷</span> Instagram</a>
+            <a href="#" aria-label="Facebook" data-action="Follow FORMEN on Facebook"><span>📘</span> Facebook</a>
+            <a href="#" aria-label="LinkedIn" data-action="Connect on LinkedIn"><span>💼</span> LinkedIn</a>
+            <a href="#" aria-label="Twitter" data-action="Follow FORMEN on X / Twitter"><span>🌐</span> Twitter/X</a>
+          </div>
         </div>
-        <a class="btn outline" href="shirts.html">View All Shirts</a>
-      </div>
 
-      <div class="products">
-        <article class="product">
-          <div class="product-img">
-            <span class="tag">NEW</span>
-            <img src="https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=900&q=85" alt="Everyday Overshirt">
-            <a class="quick" href="product.html">QUICK VIEW</a>
-          </div>
-          <div class="product-info">
-            <h3>Everyday Heavy Overshirt</h3>
-            <p>Cotton Twill · Relaxed Fit</p>
-            <div class="price-row">
-              <span class="price">₹2,199</span>
-              <span class="code">SKU-SH002</span>
-            </div>
-          </div>
-        </article>
+        <div class="footer-col">
+          <h4>SHOP</h4>
+          <a href="shirts.html">Shirts Collection</a>
+          <a href="tshirts.html">T-Shirts Collection</a>
+          <a href="polos.html">Polo Shirts</a>
+          <a href="index.html#new">New Arrivals</a>
+        </div>
 
-        <article class="product">
-          <div class="product-img">
-            <span class="tag">FORMAL</span>
-            <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=900&q=85" alt="Clean Formal Poplin Shirt">
-            <a class="quick" href="product.html">QUICK VIEW</a>
-          </div>
-          <div class="product-info">
-            <h3>Clean Formal Poplin Shirt</h3>
-            <p>Fine Poplin Cotton · Slim Fit</p>
-            <div class="price-row">
-              <span class="price">₹1,999</span>
-              <span class="code">SKU-SH003</span>
-            </div>
-          </div>
-        </article>
+        <div class="footer-col">
+          <h4>BUSINESS &amp; SUPPORT</h4>
+          <a href="wholesale.html">Wholesale Catalogue</a>
+          <a href="size-guide.html">Size &amp; Fit Guide</a>
+          <a href="faq.html">Ordering &amp; Shipping FAQ</a>
+        </div>
 
-        <article class="product">
-          <div class="product-img">
-            <span class="tag">SUMMER</span>
-            <img src="https://images.unsplash.com/photo-1621072156002-e2fccdc0b176?auto=format&fit=crop&w=900&q=85" alt="Pure Linen Summer Shirt">
-            <a class="quick" href="product.html">QUICK VIEW</a>
-          </div>
-          <div class="product-info">
-            <h3>Pure Linen Breeze Shirt</h3>
-            <p>100% French Linen · Relaxed Fit</p>
-            <div class="price-row">
-              <span class="price">₹2,499</span>
-              <span class="code">SKU-SH004</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="product">
-          <div class="product-img">
-            <span class="tag">POPULAR</span>
-            <img src="https://images.unsplash.com/photo-1627225924765-552d49cf47ad?auto=format&fit=crop&w=900&q=85" alt="Clean Mercerized Pique Polo">
-            <a class="quick" href="polos.html">QUICK VIEW</a>
-          </div>
-          <div class="product-info">
-            <h3>Clean Mercerized Pique Polo</h3>
-            <p>Pique Cotton · Regular Fit</p>
-            <div class="price-row">
-              <span class="price">₹1,299</span>
-              <span class="code">SKU-PO001</span>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a class="brand" href="index.html">
-          <span class="brand-icon">F</span> FORMEN
-        </a>
-        <p>Contemporary men's shirts, T-shirts and polos for retail buyers and wholesale partners. Crafted with focus on fit, fabric and longevity.</p>
-        <div class="social-links">
-          <a href="#" aria-label="Instagram" data-action="Follow FORMEN on Instagram"><span>📷</span> Instagram</a>
-          <a href="#" aria-label="Facebook" data-action="Follow FORMEN on Facebook"><span>📘</span> Facebook</a>
-          <a href="#" aria-label="LinkedIn" data-action="Connect on LinkedIn"><span>💼</span> LinkedIn</a>
-          <a href="#" aria-label="Twitter" data-action="Follow FORMEN on X / Twitter"><span>🌐</span> Twitter/X</a>
+        <div class="footer-newsletter">
+          <h4>STAY CONNECTED</h4>
+          <p>Subscribe to receive new season drop alerts, fabric guides, and wholesale volume pricing.</p>
+          <form class="newsletter-form" data-demo>
+            <input type="email" required placeholder="Enter your business email...">
+            <button class="btn" type="submit">Subscribe</button>
+          </form>
         </div>
       </div>
 
-      <div class="footer-col">
-        <h4>SHOP</h4>
-        <a href="shirts.html">Shirts Collection</a>
-        <a href="tshirts.html">T-Shirts Collection</a>
-        <a href="polos.html">Polo Shirts</a>
-        <a href="index.html#new">New Arrivals</a>
-      </div>
-
-      <div class="footer-col">
-        <h4>BUSINESS &amp; SUPPORT</h4>
-        <a href="wholesale.html">Wholesale Catalogue</a>
-        <a href="size-guide.html">Size &amp; Fit Guide</a>
-        <a href="faq.html">Ordering &amp; Shipping FAQ</a>
-      </div>
-
-      <div class="footer-newsletter">
-        <h4>STAY CONNECTED</h4>
-        <p>Subscribe to receive new season drop alerts, fabric guides, and wholesale volume pricing.</p>
-        <form class="newsletter-form" data-demo>
-          <input type="email" required placeholder="Enter your business email...">
-          <button class="btn" type="submit">Subscribe</button>
-        </form>
+      <div class="copyright">
+        <span>© 2026 FORMEN Menswear. All rights reserved.</span>
+        <span>Retail · Wholesale · Private Label · Contemporary Apparel</span>
       </div>
     </div>
+  </footer>
+  <div class="flash"></div>
 
-    <div class="copyright">
-      <span>© 2026 FORMEN Menswear. All rights reserved.</span>
-      <span>Retail · Wholesale · Private Label · Contemporary Apparel</span>
-    </div>
-  </div>
-</footer>
-<div class="flash"></div>
-
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
