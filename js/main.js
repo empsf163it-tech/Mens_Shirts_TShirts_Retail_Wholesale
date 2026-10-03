@@ -10,11 +10,28 @@ document.addEventListener("DOMContentLoaded", () => {
   const authModal = document.getElementById("authModal");
   const authCloses = document.querySelectorAll("[data-auth-close]");
 
+  function openModal(tabName) {
+    if (!authModal) return;
+    authModal.classList.add("open");
+    document.body.style.overflow = "hidden";
+    if (tabName) {
+      const targetTabBtn = document.querySelector(`[data-auth-tab="${tabName}"]`);
+      if (targetTabBtn) targetTabBtn.click();
+    }
+  }
+
+  function closeModal() {
+    if (!authModal) return;
+    authModal.classList.remove("open");
+    document.body.style.overflow = "";
+  }
+
   if (authToggles && authModal) {
     authToggles.forEach((btn) => {
       btn.addEventListener("click", (e) => {
         e.preventDefault();
-        authModal.classList.add("open");
+        const tab = btn.dataset.authTab || "login";
+        openModal(tab);
       });
     });
   }
@@ -22,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (authCloses && authModal) {
     authCloses.forEach((btn) => {
       btn.addEventListener("click", () => {
-        authModal.classList.remove("open");
+        closeModal();
       });
     });
   }
@@ -31,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (authModal) {
     authModal.addEventListener("click", (e) => {
       if (e.target === authModal) {
-        authModal.classList.remove("open");
+        closeModal();
       }
     });
   }
@@ -135,10 +152,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (form.id === "loginForm") {
         showFlash("Successfully logged in! Welcome back to FORMEN.");
-        if (authModal) authModal.classList.remove("open");
+        closeModal();
       } else if (form.id === "signupForm") {
         showFlash("Account created successfully! Welcome to FORMEN.");
-        if (authModal) authModal.classList.remove("open");
+        closeModal();
       } else if (form.classList.contains("newsletter-form")) {
         showFlash("Thank you for subscribing! You will receive our latest season updates.");
       } else {
