@@ -575,6 +575,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--body-text);
   font-weight: 500;
   user-select: none;
+  white-space: nowrap;
 }
 
 .checkbox-label input[type="checkbox"] {
@@ -592,6 +593,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.85rem;
   text-decoration: none;
   transition: color 0.2s ease;
+  white-space: nowrap;
 }
 
 .forgot-link:hover {
@@ -869,7 +871,8 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 10px;
   padding: 0 24px;
   color: var(--white);
 }
@@ -881,6 +884,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.1em;
   color: #93c5fd;
   text-align: center;
+  margin: 0;
 }
 
 .category-info h3 {
@@ -888,7 +892,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 3.4rem;
   font-weight: 900;
   line-height: 0.85;
-  margin: 8px 0 14px;
+  margin: 0;
   color: var(--white);
   text-align: center;
 }
@@ -982,6 +986,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  gap: 10px;
   flex-grow: 1;
   width: 100%;
 }
@@ -991,10 +996,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.85rem;
   font-weight: 800;
   line-height: 1.1;
-  margin: 0 0 10px 0;
+  margin: 0;
   color: var(--ink);
   text-align: center;
-  min-height: 2.2rem;
+  min-height: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1004,7 +1009,7 @@ h1, h2, h3, h4, h5, h6 {
 .product-info p {
   font-size: 1rem; /* 16px */
   color: var(--muted);
-  margin: 0 0 16px 0;
+  margin: 0;
   font-weight: 500;
   text-align: center;
   width: 100%;
@@ -1022,7 +1027,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
-  padding-top: 14px;
+  padding-top: 10px;
   border-top: 1px solid var(--line);
   font-size: 1rem; /* 16px */
 }
@@ -1090,9 +1095,14 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  gap: 10px;
   height: 100%;
   transition: all 0.25s ease;
   box-shadow: var(--shadow-sm);
+}
+
+.fit .mono {
+  margin: 0;
 }
 
 .fit:hover, .fit.selected {
@@ -1104,12 +1114,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .fit h3 {
   font-family: var(--display);
-  font-size: 2.8rem;
+  font-size: clamp(1.8rem, 2.5vw, 2.6rem);
   font-weight: 900;
-  margin: 12px 0 14px 0;
+  margin: 0;
   color: var(--ink);
   text-align: center;
-  min-height: 2.4rem;
+  min-height: 5.8rem;
+  line-height: 1.05;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1117,7 +1128,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fit p {
-  font-size: 1rem; /* 16px */
+  font-size: 0.95rem;
   color: var(--muted);
   margin: 0;
   text-align: center;
@@ -1127,7 +1138,8 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  line-height: 1.5;
+  line-height: 1.45;
+  min-height: 7rem;
 }
 
 .fit-result {
@@ -1160,6 +1172,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  gap: 10px;
   height: 100%;
   transition: all 0.2s ease;
 }
@@ -1172,20 +1185,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .fabric strong {
   font-family: var(--display);
-  font-size: 2.2rem;
+  font-size: clamp(1.35rem, 1.7vw, 1.9rem);
   font-weight: 800;
+  line-height: 1.05;
   color: var(--ink);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 12px;
+  margin: 0;
   text-align: center;
-  min-height: 2.2rem;
+  min-height: 6.2rem;
   width: 100%;
 }
 
 .fabric p {
-  font-size: 1rem; /* 16px */
+  font-size: 0.92rem;
   color: var(--muted);
   margin: 0;
   text-align: center;
@@ -1195,7 +1209,8 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  line-height: 1.5;
+  line-height: 1.45;
+  min-height: 6.5rem;
 }
 
 /* Split Section */
@@ -1245,15 +1260,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .choice {
   min-height: 420px;
-  padding: 60px 48px;
+  padding: 40px 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  gap: 10px;
   height: 100%;
   border-radius: var(--radius-md);
   border: 1px solid var(--line);
   box-shadow: var(--shadow-md);
+}
+
+.choice .eyebrow {
+  margin: 0;
 }
 
 .choice:first-child {
@@ -1270,7 +1290,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: clamp(2.4rem, 4vw, 4.2rem);
   font-weight: 900;
   line-height: 0.95;
-  margin: 14px 0 20px;
+  margin: 0;
   color: var(--ink);
   text-align: center;
   display: flex;
@@ -1283,7 +1303,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 440px;
   color: var(--muted);
   font-size: 1.1rem;
-  margin-bottom: 24px;
+  margin: 0;
   text-align: center;
   width: 100%;
   flex-grow: 1;
@@ -1472,6 +1492,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  gap: 10px;
   height: 100%;
 }
 
@@ -1481,7 +1502,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: var(--rust);
   display: block;
-  margin-bottom: 8px;
+  margin: 0;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -1518,6 +1539,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  gap: 10px;
   transition: all 0.2s ease;
 }
 
@@ -1533,7 +1555,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--rust);
-  margin: 0 0 8px 0;
+  margin: 0;
   text-align: center;
   width: 100%;
 }
@@ -1696,6 +1718,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  gap: 10px;
   height: 100%;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -1711,10 +1734,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.9rem;
   font-weight: 900;
   line-height: 1.1;
-  margin: 0 0 16px 0;
+  margin: 0;
   color: var(--ink);
   text-align: center;
-  min-height: 2.2rem;
+  min-height: 4.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1723,7 +1746,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .info-card p:first-of-type {
   font-size: 1rem; /* 16px */
-  margin: 0 0 20px 0;
+  margin: 0;
   color: var(--muted);
   text-align: center;
   width: 100%;
@@ -1732,7 +1755,8 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  line-height: 1.5;
+  line-height: 1.45;
+  min-height: 3.4rem;
 }
 
 .info-card p:last-child {
@@ -1740,7 +1764,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: var(--ink);
   font-size: 1.05rem;
-  padding-top: 14px;
+  padding-top: 10px;
   border-top: 1px solid var(--line);
   width: 100%;
   text-align: center;
@@ -1942,7 +1966,7 @@ h1, h2, h3, h4, h5, h6 {
 .social-links a {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   border: 1px solid var(--line);
   background-color: #fff;
   padding: 8px 14px;
@@ -1954,10 +1978,21 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.2s ease;
 }
 
+.social-links a svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
 .social-links a:hover {
   background-color: var(--ink);
   color: #fff;
   border-color: var(--ink);
+}
+
+.social-links a:hover svg {
+  transform: scale(1.1);
 }
 
 .footer-newsletter {
@@ -2091,10 +2126,47 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     gap: 10px;
   }
+
+  .auth-modal {
+    padding: 28px 20px;
+  }
+
+  .auth-options {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 14px 0 20px 0;
+    text-align: center;
+  }
+
+  .checkbox-label,
+  .forgot-link {
+    white-space: nowrap;
+  }
 }
 
 @media (max-width: 400px) {
   .hero h1, .page-hero h1 { font-size: 1.85rem; }
   .section-head h2 { font-size: 1.65rem; }
   .brand { font-size: 1.7rem; }
+}
+
+/* Universal Card Layout System (Eyebrow -> Heading -> Subheading -> Links/Buttons with 10px gap) */
+.card,
+.card-item,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.card > *,
+.card-item > *,
+.card-content > * {
+  margin-top: 0;
+  margin-bottom: 0;
 }
