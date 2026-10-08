@@ -138,10 +138,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Close all answers
       document.querySelectorAll(".faq-answer").forEach((a) => (a.style.display = "none"));
+      document.querySelectorAll(".faq-item").forEach((i) => i.classList.remove("active"));
       document.querySelectorAll(".faq-question span:last-child").forEach((icon) => (icon.textContent = "+"));
 
       if (!isOpen) {
         answer.style.display = "block";
+        item.classList.add("active");
         btn.querySelector("span:last-child").textContent = "−";
       }
     });
